@@ -1,0 +1,663 @@
+@import url('https://fonts.googleapis.com/css?family=Caveat|Fredericka+the+Great|Monoton|Nanum+Pen+Script|Patrick+Hand|Permanent+Marker|Special+Elite|Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Cinzel|Frijole|Rock+Salt&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 
+font-family: 'Permanent Marker', cursive;
+font-family: 'Caveat', cursive;
+font-family: 'Patrick Hand', cursive;
+font-family: 'Special Elite', cursive;
+font-family: 'Monoton', cursive;
+font-family: 'Unica One', cursive;
+font-family: 'Nanum Pen Script', cursive;
+font-family: 'Fredericka the Great', cursive;
+ */
+
+/*  menu, settings */
+.header {
+    width: 100%;
+    height: 10vh;
+    background-color: gainsboro;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__menu {
+    width: 50%;
+    height: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.decoration {
+    width: 23%;
+    height: 50%;
+    text-align: center;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.966);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.bold,
+.italic,
+.underline,
+.through,
+.a,
+.font,
+.color,
+.back {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.align,
+.style {
+    width: 18%;
+    height: 50%;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.966);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.left,
+center,
+.right {
+    width: 33%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+i {
+    font-size: 27px;
+}
+
+.a,
+.through {
+    font-size: 20px;
+}
+
+.access,
+.edit {
+    width: 6%;
+    height: 50%;
+    text-align: center;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.edit {
+    background-color: grey;
+}
+
+.access {
+    background-color: rgba(255, 255, 255, 0.966);
+}
+
+/* header__edit */
+
+.header__edit {
+    width: 10%;
+    height: 60%;
+    border: 2px solid gray;
+    border-radius: 6px;
+    background-color: ghostwhite;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    display: none;
+}
+
+/* font-family */
+.family {
+    width: 10vw;
+    padding: 10px;
+    line-height: 1.7em;
+    border: 2px solid grey;
+    border-radius: 10px;
+    background-color: ghostwhite;
+    position: absolute;
+    top: 90px;
+    left: 890px;
+    display: none;
+}
+
+/* font-choose */
+.font-choose {
+    width: 5vw;
+    padding: 10px;
+    line-height: 1.7em;
+    border: 2px solid grey;
+    border-radius: 10px;
+    background-color: ghostwhite;
+    position: absolute;
+    top: 90px;
+    left: 970px;
+    display: none;
+}
+
+/* color-text and background*/
+.color-box {
+    width: 25vw;
+    min-height: 300px;
+    font-size: 25px;
+    text-align: center;
+    border: 2px solid grey;
+    border-radius: 10px;
+    background-color: ghostwhite;
+    position: absolute;
+    top: 20px;
+    left: 800px;
+    display: none;
+}
+
+/*  */
+.header-color-text {
+    width: 100%;
+    height: 6vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.choose-color-text {
+    width: 60%;
+}
+
+.close-choose-color-text {
+    width: 10%;
+}
+
+.header-color-back {
+    width: 100%;
+    height: 6vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    display: none;
+}
+
+.choose-background {
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5px;
+    display: none;
+}
+
+.choose-color-back {
+    width: 85%;
+    font-weight: 800;
+}
+
+/* color of text or back */
+.color-text-back {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    border-top: 3px solid gray;
+}
+
+.col {
+    width: 14%;
+    height: 30%;
+}
+
+.col:nth-of-type(1) {
+    background-color: blue;
+}
+
+.col:nth-of-type(2) {
+    background-color: rgb(73, 73, 119);
+}
+
+.col:nth-of-type(3) {
+    background-color: green;
+}
+
+.col:nth-of-type(4) {
+    background-color: greenyellow;
+}
+
+.col:nth-of-type(5) {
+    background-color: rgba(0, 204, 255, 0.404);
+}
+
+.col:nth-of-type(6) {
+    background-color: rgb(0, 195, 255);
+}
+
+.col:nth-of-type(7) {
+    background-color: rgb(132, 0, 255);
+}
+
+.col:nth-of-type(8) {
+    background-color: fuchsia;
+}
+
+.col:nth-of-type(9) {
+    background-color: rgb(16, 1, 44);
+}
+
+.col:nth-of-type(10) {
+    background-color: rgb(11, 11, 63);
+}
+
+.col:nth-of-type(11) {
+    background-color: yellow;
+}
+
+.col:nth-of-type(12) {
+    background-color: rgb(255, 208, 0);
+}
+
+.col:nth-of-type(13) {
+    background-color: rgba(255, 196, 0, 0.726);
+}
+
+.col:nth-of-type(14) {
+    background-color: rgb(255, 115, 0);
+}
+
+.col:nth-of-type(15) {
+    background-color: red;
+}
+
+.col:nth-of-type(16) {
+    background-color: rgb(255, 60, 0);
+}
+
+.col:nth-of-type(17) {
+    background-color: gray;
+}
+
+.col:nth-of-type(18) {
+    background-color: ghostwhite;
+}
+
+.col:nth-of-type(19) {
+    background-color: white;
+}
+
+.col:nth-of-type(20) {
+    background-color: gainsboro;
+}
+
+.col:nth-of-type(21) {
+    background-color: black;
+}
+
+/* image background */
+
+.box-image {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    display: none;
+}
+
+.image {
+    width: 30%;
+    height: 30%;
+}
+
+.image:nth-of-type(1) {
+    background-size: cover;
+    background-image: url('https://2krota.ru/wp-content/uploads/2018/10/ssha-malibu-malibu-more-bereg.jpg');
+}
+
+.image:nth-of-type(2) {
+    background-size: cover;
+    background-image: url('https://media-cdn.tripadvisor.com/media/photo-s/0c/3d/f8/60/rakotzbrucke.jpg');
+}
+
+.image:nth-of-type(3) {
+    background-size: cover;
+    background-image: url('https://sites.google.com/site/prirodaukraieni9612/_/rsrc/1368976917563/foto-prirodi-ukraieni/110.jpg');
+}
+
+.image:nth-of-type(4) {
+    background-size: cover;
+    background-image: url('https://konkurent.in.ua/media/cache/0c/bf/0cbfe4c18e3d50785b01d7dd0388dbad.jpg');
+}
+
+.image:nth-of-type(5) {
+    background-size: cover;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS77cShs3c5UKtPmQfyArc3qrLBeXAZS7KRREqNkLxeUULkfIG7&usqp=CAU');
+}
+
+.image:nth-of-type(6) {
+    background-size: cover;
+    background-image: url('https://s.zefirka.net/images/2016-12-29/luchshie-fotografii-pejzazhej-i-prirody-2016-goda/luchshie-fotografii-pejzazhej-i-prirody-2016-goda-19.jpg');
+}
+
+.image:nth-of-type(7) {
+    background-size: cover;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRAb16pt0_WD82zjoofQ4iM-qUxF-3n3aYqHV2WzjBlVTqNs5jk&usqp=CAU');
+}
+
+.image:nth-of-type(8) {
+    background-size: cover;
+    background-image: url('https://natworld.info/wp-content/uploads/2018/01/%D0%A1%D0%BE%D1%87%D0%B8%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BD%D0%B0-%D1%82%D0%B5%D0%BC%D1%83-%D0%9F%D1%80%D0%B8%D1%80%D0%BE%D0%B4%D0%B0-900x500.jpeg');
+}
+
+.image:nth-of-type(9) {
+    background-image: url('https://posterix.com.ua/images/product_images/popup_images/kupit-fotooboi-na-stenu-priroda-utro-v-gorakh-211.jpg');
+    background-size: cover;
+}
+
+/* url image */
+
+.url-image {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    display: none;
+}
+
+.form-url {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.url-input {
+    width: 70%;
+    height: 50%;
+    border-radius: 8px;
+}
+
+.but-url {
+    width: 25%;
+    height: 50%;
+    border-radius: 8px;
+    background-color: grey;
+}
+
+/* sign up */
+.check-in {
+    width: 500px;
+    height: 250px;
+    border-radius: 20px;
+    border: 3px solid red;
+    position: absolute;
+    background-color: rgb(214, 213, 213);
+    top: 20px;
+    left: 600px;
+    display: none;
+}
+
+.header-check-in {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.signTitle {
+    width: 90%;
+    text-align: center;
+}
+
+.close-check-in {
+    width: 8%;
+}
+
+.checkForm {
+    text-align: center;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.login,
+.pass,
+.sign {
+    width: 90%;
+    height: 20%;
+    border-radius: 5px;
+}
+
+.btnSignin {
+    background-color: gainsboro;
+}
+
+/*  text,result */
+.container {
+    width: 100%;
+    min-height: 700px;
+    border: 2px solid grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__inner {
+    width: 90%;
+    min-height: 600px;
+    line-height: 1.9rem;
+    font-size: 15px;
+    font-family: 'Rock Salt', cursive;
+}
+
+/* container__edit */
+
+.container__edit {
+    width: 90%;
+    height: 90%;
+    line-height: 1.5em;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.area {
+    width: 90%;
+    min-height: 500px;
+}
+
+/* table */
+.table {
+    width: 40%;
+    height: 450px;
+    border: 3px solid gray;
+    border-radius: 20px;
+    position: absolute;
+    top: 20px;
+    left: 30%;
+    background-color: gainsboro;
+    text-align: center;
+    display: none;
+}
+
+.header-table {
+    width: 95%;
+    height: 10%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tableForm {
+    width: 85%;
+    height: 90%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.textTrCount,
+.textTdCount,
+.textTdWidth,
+.textTdHeight,
+.textWidthBord {
+    width: 45%;
+    height: 3vh;
+}
+
+.tr,
+.td,
+.widthTd,
+.heightTd,
+.widthBorder,
+.resetTb,
+.createTb {
+    width: 45%;
+    height: 6vh;
+    border-radius: 7px;
+}
+
+.styleBd,
+.textColBd {
+    width: 20%;
+}
+
+.resetTb {
+    background-color: red;
+}
+
+.createTb {
+    background-color: green;
+}
+
+.borderStyle,
+.bordCol {
+    width: 20%;
+    height: 5vh;
+    border-radius: 7px;
+}
+
+/* OL list */
+.container__list {
+    width: 20%;
+    height: 33vh;
+    border: 3px solid gray;
+    border-radius: 20px;
+    background-color: gainsboro;
+    text-align: center;
+    position: absolute;
+    top: 30px;
+    left: 40%;
+    display: none;
+}
+
+.header-ol-list {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.olForm {
+    width: 95%;
+    height: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    display: none;
+}
+
+.titleOl,
+.titleUl {
+    width: 90%;
+}
+
+.count-li-ol,
+.ol-marks {
+    height: 5vh;
+    width: 90%;
+    border-radius: 9px;
+}
+
+.createOl,
+.resetOl {
+    width: 45%;
+    height: 6vh;
+    border-radius: 9px;
+}
+
+.createOl {
+    background-color: green;
+}
+
+.resetOl {
+    background-color: red;
+}
+
+/* ul list */
+
+.ulForm {
+    width: 95%;
+    height: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    display: none;
+}
+
+.header-ul-list {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    display: none;
+}
+
+.count-li-ul,
+.ul-marks {
+    height: 5vh;
+    width: 90%;
+    border-radius: 9px;
+}
+
+.createUl,
+.resetUl {
+    width: 45%;
+    height: 6vh;
+    border-radius: 9px;
+}
+
+.createUl {
+    background-color: green;
+}
+
+.resetUl {
+    background-color: red;
+}
