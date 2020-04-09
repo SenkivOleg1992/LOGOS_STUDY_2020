@@ -1,0 +1,293 @@
+body {
+    max-width: 980px;
+    height: 900px;
+    border: 2px solid black;
+    margin: auto;
+}
+
+header {
+    height: 20%;
+    width: 100%;
+    background-color: beige;
+}
+
+header .inside {
+    height: 100px;
+    width: 50%;
+    background-color: chocolate;
+    display: inline-block;
+    margin: 35px 225px 35px 225px;
+}
+
+header .site {
+    height: 50px;
+    width: 30%;
+    background-color: yellow;
+    text-align: center;
+    margin: 20px 10px 15px 150px;
+}
+
+.main_1 {
+    float: left;
+    width: 20%;
+    height: 150px;
+    background-color: skyblue;
+    text-align: center;
+}
+
+.main_2 {
+    float: left;
+    width: 20%;
+    height: 150px;
+    background-color: blue;
+    text-align: center;
+
+}
+
+.main_3 {
+    float: left;
+    width: 20%;
+    height: 150px;
+    background-color: bisque;
+    text-align: center;
+}
+
+.main_4 {
+    float: left;
+    width: 20%;
+    height: 150px;
+    ;
+    background-color: pink;
+    text-align: center;
+}
+
+.main_5 {
+    float: left;
+    width: 20%;
+    height: 150px;
+    background-color: fuchsia;
+    text-align: center;
+}
+
+.container_1 {
+    width: 33.3%;
+    height: 350px;
+    float: left;
+    background-color: green;
+}
+
+.text {
+    width: 60%;
+    height: 20%;
+    margin: 30px auto;
+    background-color: grey;
+}
+
+.cont3 {
+    width: 40%;
+    height: 20%;
+    margin: auto;
+    background-color: red;
+    text-align: center;
+}
+
+.cont4 {
+    display: inline-block;
+    width: 20%;
+    height: 43%;
+    background-color: palevioletred;
+    text-align: center;
+    display: inline-block;
+    margin: 0px 0px 0px 98px;
+}
+
+.cont5 {
+    display: inline-block;
+    width: 20%;
+    height: 43%;
+    background-color: peru;
+    text-align: center;
+    display: inline-block;
+}
+
+.container_2 {
+    width: 33.3%;
+    height: 350px;
+    float: left;
+    background-color: greenyellow;
+}
+
+.classA {
+    width: 100%;
+    height: 30px;
+    background-color: skyblue;
+    text-align: center;
+}
+
+.classB {
+    width: 33.3%;
+    height: 200px;
+    background-color: rgb(32, 175, 218);
+    text-align: center;
+    float: left;
+}
+
+.classC1 {
+    width: 33.3%;
+    height: 60px;
+    background-color: rgb(42, 75, 85);
+    text-align: center;
+    float: left;
+}
+
+.classD {
+    display: inline-block;
+    width: 33.3%;
+    height: 60px;
+    background-color: burlywood;
+    text-align: center;
+    float: left;
+}
+
+.classC2 {
+    width: 33.3%;
+    height: 60px;
+    background-color: blue;
+    float: left;
+    text-align: center;
+}
+
+.classD1 {
+    width: 33.3%;
+    height: 60px;
+    background-color: skyblue;
+    float: right;
+    text-align: center;
+}
+
+.classC3 {
+    width: 33.3%;
+    height: 100px;
+    background-color: purple;
+    float: left;
+    text-align: center;
+}
+
+.classD3 {
+    width: 33.3%;
+    height: 200px;
+    background-color: peru;
+    float: left;
+    text-align: center;
+}
+
+.classB1 {
+    width: 17%;
+    height: 50px;
+    background-color: red;
+    text-align: center;
+    float: left;
+}
+
+.classB2 {
+    width: 16.5%;
+    height: 50px;
+    background-color: green;
+    text-align: center;
+    float: left;
+}
+
+
+.container_3 {
+    width: 33.3%;
+    height: 350px;
+    float: left;
+    background-color: wheat;
+}
+
+.class1 {
+    width: 33.3%;
+    height: 30px;
+    text-align: center;
+    background-color: springgreen;
+    float: left;
+}
+
+.class2 {
+    width: 33.3%;
+    height: 30px;
+    text-align: center;
+    background-color: tomato;
+    float: left;
+}
+
+.class3 {
+    width: 33.3%;
+    height: 30px;
+    text-align: center;
+    background-color: violet;
+    float: left;
+}
+
+.class4 {
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    background-color: gainsboro;
+}
+
+.class6 {
+    width: 100%;
+    height: 40px;
+    background-color: gray;
+    text-align: center;
+}
+
+.class7 {
+    width: 33.3%;
+    height: 250px;
+    background-color: seagreen;
+    text-align: center;
+    float: left;
+}
+
+.class8 {
+    width: 66.7%;
+    height: 60px;
+    background-color: darkgrey;
+    text-align: center;
+    float: right;
+}
+
+.class9 {
+    width: 33.3%;
+    height: 90px;
+    background-color: violet;
+    text-align: center;
+    float: left;
+}
+
+.class10 {
+    width: 33.3%;
+    height: 90px;
+    background-color: rgb(146, 99, 11);
+    text-align: center;
+    float: right;
+}
+
+.class11 {
+    width: 66.7%;
+    height: 90px;
+    background-color: rgb(170, 101, 170);
+    text-align: center;
+    margin: auto;
+    float: right;
+}
+
+.footer {
+    height: 220px;
+    width: 100%;
+    background-color: grey;
+    float: left;
+    text-align: center;
+}

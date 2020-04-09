@@ -1,0 +1,36 @@
+.first {
+    height: 250px;
+    width: 500px;
+    border: 2px dashed red;
+    background-color: skyblue;
+    margin:  50px auto;    
+    padding: 50px;
+}
+
+.second {
+    height: 250px;
+    width: 500px;
+    margin: 50px auto;
+    padding: 50px;
+    background-color: yellow;
+    border: 2px dotted red;
+}
+
+.third {
+    height: 250px;
+    width: 500px;
+    background-color: skyblue;
+    border: 20px inset blue;
+    margin: 50px auto;
+    padding: 50px;
+}
+
+.fourth {
+    height: 250px;
+    width: 500px;
+    background-color: skyblue;
+    border-left: 20px inset black;
+    margin: 50px auto;
+    padding: 50px;
+
+}
