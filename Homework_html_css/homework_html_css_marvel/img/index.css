@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One&display=swap');
+
+:root {
+    --accent-color: #bd1b0f;
+}
+
+body {
+    max-width: 1600px;
+    margin: auto;
+}
+header{
+    height: 100px;
+}
+
+header .logo {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    color: var(--accent-color);
+    background-color: #e3dfde;
+    padding: 0rem;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin: 30px;
+    padding: 10px;
+}
+.about{
+    width: 600px;
+    align-self: flex-start;
+    padding: 0px 30px 30px 30px;
+}
+.about_marvel {
+    font-size: 2rem;
+}
+
+.line {
+    border-bottom: 5px solid red;
+}
+
+.text {
+    font-size: 1.3rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: justify;
+}
+
+.banner {
+    align-self: flex-start;
+    width: 640px;
+    height: 360px;
+    padding: 10px;
+    border: 4px solid gray;
+    margin: 25px;
+}
+
+.under_banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 100px;
+    padding: 10px;
+    width: 640px;
+
+}
+.item1 {
+    border: 3px solid gray;
+    padding: 5px;
+}
+.item2 {
+    border: 3px solid gray;
+    padding: 5px;
+}
+
+.item3 {
+    border: 3px solid gray;
+    padding: 5px;
+}
+
+.item4 {
+    border: 3px solid gray;
+    padding: 5px;
+}
