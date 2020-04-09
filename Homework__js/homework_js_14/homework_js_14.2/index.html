@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.3/css/unicons.css">
+</head>
+
+<body>
+
+    <div class="account">
+        <h1>Create your account</h1>
+        <form name="create">
+            <h3>First Name</h3>
+            <input type="text" name="fN">
+            <h3>Second Name</h3>
+            <input type="text" name="sN">
+            <h3>Email address</h3>
+            <input type="email" name="em">
+            <input type="radio" name="sex" value="man" checked>Man
+            <input type="radio" name="sex" value="woman">woman
+            <h3>Position</h3>
+            <select name="choose" class="position">
+                <option value="choose" selected></option>
+                <option value="frontend">Frontend</option>
+                <option value="Backend">Backend</option>
+                <option value="qcqa">QC/QA</option>
+            </select>
+            <input type="checkbox" name="agree" class="agree">I agree all statements in Terms of service
+            <input type="button" name="signUp" value="Sign up">
+        </form>
+    </div>
+
+    <div class="profile">
+        <header></header>
+        <main>
+            <div class="icon">
+            </div>
+            <p class="name"></p>
+            <p class="eemail"></p>
+            <P class="pos"></P>
+            <button type="button" class="signOut" name="signOut">Sign out</button>
+        </main>
+        <footer>
+            <i class="uil uil-facebook-f"></i>
+            <i class="uil uil-github-alt"></i>
+            <i class="uil uil-linkedin"></i>
+        </footer>
+    </div>
+
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
