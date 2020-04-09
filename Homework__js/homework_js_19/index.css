@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Akronim|Nosifer&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nosifer', cursive;
+    background-color: ghostwhite;
+    position: relative;
+}
+
+.container {
+    width: 50%;
+    height: 70vh;
+    margin: 100px auto;
+    border: 4px solid grey;
+    border-radius: 20px;
+    background-color: gainsboro;
+}
+
+.dictates {
+    width: 70%;
+    height: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 25px;
+}
+
+h1 {
+    text-align: center;
+}
+
+input[type=text] {
+    height: 10%;
+    width: 100%;
+    font-size: 20px;
+    border-radius: 5px;
+    font-family: 'Akronim', cursive;
+    letter-spacing: 0.2em;
+}
+
+input[type=password] {
+    height: 10%;
+    width: 100%;
+    font-size: 20px;
+    border-radius: 5px;
+    font-family: 'Akronim', cursive;
+    letter-spacing: 0.2em;
+}
+
+.signUp {
+    width: 100%;
+    height: 10%;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(30, 115, 226);
+    font-size: 20px;
+    font-family: 'Nosifer', cursive;
+}
+
+.wrongFn {
+    margin: 0;
+    padding: 5px;
+    position: fixed;
+    top: 239px;
+    left: 560px;
+    border-radius: 6px;
+    font-size: 10px;
+    text-align: left;
+    background-color: red;
+    color: white;
+    display: none;
+}
+
+.wrongSn {
+    margin: 0;
+    padding: 5px;
+    position: absolute;
+    top: 217px;
+    left: 560px;
+    border-radius: 6px;
+    font-size: 10px;
+    text-align: left;
+    background-color: red;
+    color: white;
+    display: none;
+}
+
+.wrongEm {
+    margin: 0;
+    padding: 5px;
+    position: fixed;
+    top: 395px;
+    left: 560px;
+    border-radius: 6px;
+    font-size: 10px;
+    text-align: left;
+    background-color: red;
+    color: white;
+    display: none;
+}
+
+.wrongPh {
+    margin: 0;
+    padding: 5px;
+    position: fixed;
+    top: 473px;
+    left: 560px;
+    border-radius: 6px;
+    font-size: 10px;
+    text-align: left;
+    background-color: red;
+    color: white;
+    display: none;
+}
+
+.wrongPass {
+    margin: 0;
+    padding: 5px;
+    position: fixed;
+    top: 552px;
+    left: 560px;
+    border-radius: 6px;
+    font-size: 10px;
+    text-align: left;
+    background-color: red;
+    color: white;
+    display: none;
+}
