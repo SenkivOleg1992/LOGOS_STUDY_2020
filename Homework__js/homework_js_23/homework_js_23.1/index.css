@@ -1,0 +1,16 @@
+body{
+    display: flex;
+}
+.box-origin, .box-copy{
+    width: 600px;
+    height: 600px;
+    border: 3px solid gainsboro;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 100px 97.5px;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+}
