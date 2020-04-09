@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Public+Sans&display=swap');
+
+:root {
+    --accent-color: #4842FF;
+    --main-color: black;
+
+}
+
+body {
+    max-width: 1900px;
+    background-color: rgb(218, 216, 216);
+}
+
+header {
+    background-color: white;
+    margin: -15px -15px;
+}
+
+header nav .logo {
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 2.8rem;
+    color: var(--accent-color);
+    padding: 10px;
+}
+
+header nav .menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 15px;
+
+}
+
+header nav .menu a {
+    color: var(--main-color);
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: 'Gloria Hallelujah', cursive;
+    padding: 30px;
+    border: 1px solid  #F4F4F4;
+}
+
+header nav .menu a:hover {
+    background-color: rgb(195, 195, 196);
+}
+
+header .line {
+    border-bottom: 2px solid #E4E4E4;
+    margin: auto;
+}
+
+@media (min-width: 320px) {
+    header nav {
+        display: flex;
+    }
+
+    header nav .menu {
+        flex: 1;
+    }
+}
