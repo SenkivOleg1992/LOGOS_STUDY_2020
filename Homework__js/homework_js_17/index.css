@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great|Vast+Shadow&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*  */
+.main {
+    width: 100%;
+    height: 100vh;
+    border: 1px solid #000;
+    background-color: rgb(17, 29, 56);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(0, 140, 255);
+    font-family: 'Fredericka the Great', cursive;
+}
+
+.main__alldate {
+    width: 99%;
+    height: 31%;
+    border: 7px solid rgb(45, 45, 196);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 100px;
+    letter-spacing: 0.5rem;
+}
+
+.main__alldate__date {
+    font-size: 30px;
+}
+
+/* секундомір */
+.main__stopwatch {
+    width: 99%;
+    height: 31%;
+    border: 7px solid rgb(45, 45, 196);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.main__stopwatch__inner {
+    width: 30%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.main__stopwatch__inner__watch {
+    width: 98%;
+    height: 60%;
+    font-size: 80px;
+    letter-spacing: 6px;
+    padding: 20px 15px;
+}
+
+.start,
+.loop,
+.stop,
+.reset {
+    width: 24%;
+    height: 20%;
+    border: 3px solid rgb(45, 45, 196);
+    border-radius: 10px;
+    background-color: rgb(17, 29, 56);
+    color: rgb(45, 45, 196);
+    font-size: 20px;
+    box-shadow: 5px 3px 3px blue;
+}
+
+.main__stopwatch__saved {
+    width: 30%;
+    height: 90%;
+    border: 3px solid rgb(45, 45, 196, 0.1);
+    box-shadow: 2px 2px 2px blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    letter-spacing: 0.4rem;
+    overflow-x: hidden;
+}
+
+/* зворотній відлік */
+.main__timer {
+    width: 99%;
+    height: 31%;
+    border: 7px solid rgb(45, 45, 196);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.main__timer__choose {
+    width: 10%;
+    height: 80%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.main__timer__choose__show {
+    width: 90%;
+    height: 50%;
+    font-size: 80px;
+    text-align: center;
+}
+
+.main__timer__choose__text {
+    width: 90%;
+    height: 10%;
+    text-align: center;
+    font-size: 20px;
+}
+
+.plusTimer,
+.minusTimer {
+    width: 30%;
+    height: 20%;
+    border: 2px solid rgb(45, 45, 196);
+    border-radius: 5px;
+    background-color: rgb(17, 29, 56);
+    box-shadow: 2px 2px 2px gainsboro;
+    color: rgb(45, 45, 196);
+    font-size: 30px;
+}
+
+/* показ відліку */
+.main__timer__readout {
+    width: 20%;
+    height: 80%;
+}
+
+.readoutForm {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.readoutWind {
+    width: 95%;
+    height: 70%;
+    background-color: rgb(17, 29, 56);
+    border: none;
+    text-align: center;
+    font-size: 80px;
+    color: rgb(0, 140, 255);
+    font-family: 'Fredericka the Great', cursive;
+}
+
+.startReadout,
+.stopReadout,
+.resetReadout {
+    width: 30%;
+    height: 20%;
+    border: 2px solid rgb(45, 45, 196);
+    border-radius: 5px;
+    background-color: rgb(17, 29, 56);
+    box-shadow: 2px 2px 2px gainsboro;
+    color: rgb(45, 45, 196);
+    font-size: 20px;
+}

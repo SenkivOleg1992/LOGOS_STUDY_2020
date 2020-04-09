@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="main__alldate">
+            <div class="main__alldate__date"></div>
+            <div class="main__alldate__clock"></div>
+        </div>
+        <div class="main__stopwatch">
+            <div class="main__stopwatch__inner">
+                <div class="main__stopwatch__inner__watch">00:00:00:00</div>
+                <button type="button" class="start">START</button>
+                <button type="button" class="loop">LOOP</button>
+                <button type="button" class="stop">STOP</button>
+                <button type="button" class="reset">RESET</button>
+            </div>
+            <div class="main__stopwatch__saved"></div>
+        </div>
+        <div class="main__timer">
+            <div class="main__timer__choose">
+                <div class="main__timer__choose__show">25</div>
+                <div class="main__timer__choose__text">
+                    <p>MINUTES</p>
+                </div>
+                <button type="button" class="plusTimer">+</button>
+                <button type="button" class="minusTimer">-</button>
+            </div>
+            <div class="main__timer__readout">
+                <form name="readout" class="readoutForm">
+                    <input type="text" class="readoutWind" name="readoutWind" value="00:00">
+                    <input type="button" name="startReadout" class="startReadout" value="start">
+                    <input type="button" name="stopReadout" class="stopReadout" value="stop">
+                    <input type="button" name="resetReadout" class="resetReadout" value="reset">
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
