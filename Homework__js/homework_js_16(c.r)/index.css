@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css?family=Bellota|Crimson+Text|Dancing+Script|Inconsolata|Lato&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* main container */
+.container {
+    width: 80%;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+/* top container */
+.container__top {
+    width: 80%;
+    min-height: 45vh;
+    margin: 20px auto 0;
+    border: 1px solid grey;
+    border-radius: 10px;
+    background-color: gainsboro;
+    padding: 40px;
+    line-height: 1.8rem;
+}
+
+/* center container*/
+.between {
+    margin: 0 auto;
+    padding: 20px;
+    width: 20%;
+    min-height: 8vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#edit {
+    width: 40%;
+    height: 100%;
+    background-color: orange;
+    color: white;
+}
+
+#style {
+    width: 40%;
+    height: 100%;
+    background-color: skyblue;
+    color: white;
+}
+
+/* bottom  container*/
+.container__bottom {
+    width: 80%;
+    height: 40vh;
+    margin: 0 auto;
+    border: 1px solid grey;
+    background-color: gainsboro;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.container__bottom__edit {
+    width: 100%;
+    height: 90%;
+    display: none;
+}
+
+.area {
+    width: 100%;
+    min-height: 90%;
+}
+
+#add {
+    width: 10%;
+    height: 40%;
+    background-color: red;
+}
+
+#save {
+    width: 10%;
+    height: 30%;
+    background-color: green;
+}
+
+/* container__bottom__style"*/
+.container__bottom__style {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    display: none;
+}
+
+/* styleForm */
+.styleForm {
+    width: 100%;
+    margin: 20px 20px;
+    padding: 15 0px;
+    line-height: 1.8rem;
+}
+
+/* stylechoose */
+.container__bottom__style__choose {
+    width: 50%;
+    height: 100%;
+}
+
+/* colorbox */
+.container__bottom__style__colorbox {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__bottom__style__colorbox__color {
+    width: 50%;
+    height: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid gold;
+}
+
+.container__bottom__style__colorbox__color__first {
+    width: 33.3%;
+    height: 33.3%;
+    background-color: grey;
+}
+
+.container__bottom__style__colorbox__color__second {
+    width: 33.3%;
+    height: 33.3%;
+    background-color: white;
+}
+
+.container__bottom__style__colorbox__color__third {
+    width: 33.3%;
+    height: 33.3%;
+    background-color: seashell;
+}
+
+.container__bottom__style__colorbox__color__fourth {
+    width: 33.3%;
+    height: 33.3%;
+    background-color: steelblue;
+}
+
+.container__bottom__style__colorbox__color__five {
+    width: 33.3%;
+    height: 33.3%;
+    background-color: gold;
+}
+
+.container__bottom__style__colorbox__color__six {
+    width: 33.3%;
+    height: 33.3%;
+    background-color: rosybrown;
+}
+
+.container__bottom__style__colorbox__color__seven {
+    width: 33.3%;
+    height: 33.3%;
+    background-color: teal;
+}
+
+.container__bottom__style__colorbox__color__eight {
+    width: 33.3%;
+    height: 33.3%;
+    background-color: thistle;
+}
+
+.container__bottom__style__colorbox__color__nine {
+    width: 33.3%;
+    height: 33.3%;
+    background-color: darkkhaki;
+}
+
+/*  */
+input[type=button] {
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* button of colorBox */
+.colorText, .colorBack {
+    background-color: gray;
+}
+/* container-add     table, list*/
+
+.container-add {
+    width: 80%;
+    min-height: 450px;
+    margin: 0 auto;
+    display: none;
+    line-height: 2.7rem;
+}
+
+.container-add__inner {
+    width: 80%;
+    min-height: 300px;
+    padding: 30px;
+    margin: 50px auto;
+    border: 1px solid grey;
+    border-radius: 20px;
+    background-color: gainsboro;
+    word-spacing: 0.3rem;
+}
+
+/* table */
+.container-add__inner__table {
+    width: 100%;
+    min-height: 400px;
+    display: none;
+}
+
+.table {
+    width: 95%;
+    min-height: 350px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    line-height: 2.7rem;
+}
+
+.countTr, .countTd, .widthTd, .heightTd  {
+    width: 85%;
+    height: 4vh;
+    border-radius: 6px;
+}
+.addStyle {
+    width: 90%;
+}
+.widthBr, .borderType  {
+    width: 17%;
+    height: 5vh;
+    border-radius: 7px;
+}
+
+.borderColor {
+    width: 15%;
+    height: 5vh;
+    border-radius: 10px;
+}
+
+.btnCreate {
+    width: 17%;
+    height: 5vh;
+    border-radius: 15px;
+    box-shadow: 0 5px 5px rgb(2, 68, 2);
+    background-color: green;
+    color: white;
+}
+/* container-add__inner__list */
+
+.container-add__inner__list {
+    width: 100%;
+    min-height: 200px;
+    display: none;
+}
+
+.list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px;
+    line-height: 1.7rem;
+}
+
+.countLi {
+    width: 85%;
+    border-radius: 7px;
+    height: 5vh;
+    line-height: 1.9rem;
+}
+
+.marks {
+    width: 85%;
+    height: 5vh;
+    border-radius: 7px;
+    line-height: 1.9rem;
+}
+
+/* button create list*/
+.btnList {
+    background-color: green;
+    color: white;
+    box-shadow: 3px 3px 3px gold;
+}
