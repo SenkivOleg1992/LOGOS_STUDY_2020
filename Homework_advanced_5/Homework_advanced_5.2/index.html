@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced_5.2</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="cont-res">
+            <div class="cont-res__inner">
+                <h3>Баланс</h3>
+                <div class="balance">
+                    1000грн
+                </div>
+                <h3>Пиво</h3>
+                <div class="beer">
+                    100шт
+                </div>
+                <h3>Вино</h3>
+                <div class="vine">
+                    50шт
+                </div>
+                <h3>Пепсі</h3>
+                <div class="pepsi">
+                    80шт
+                </div>
+            </div>
+        </div>
+        <div class="cont-choose">
+            <div class="cont-choose__inner">
+                <form name="choose-buy" class="choose-buy">
+                    <h3>Кількість</h3>
+                    <input type="number" name="count" class="count">
+                    <div class="radio">
+                        <label>
+                            Пиво
+                            <input type="radio" name="product" value="beer" checked>
+                        </label>
+                        <label>
+                            Вино
+                            <input type="radio" name="product" value="vine">
+                        </label>
+                        <label>
+                            Пепсі
+                            <input type="radio" name="product" value="pepsi">
+                        </label>
+                    </div>
+                    <input type="button" name="chooseBut" class="choose-but" value="Додати">
+                    <div class="order-list"></div>
+                    <input type="button" name="buyBut" class="buy-but" value="Купити">
+                </form>
+            </div>
+        </div>
+        <div class="cont-buy">
+            <div class="cont-buy__inner"></div>
+        </div>
+    </div>
+    <script type="module" src="shop-module.js"></script>
+    <script type="module" src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    margin: 30px auto;
+    width: 90%;
+    height: 80vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.cont-res, .cont-choose, .cont-buy{
+    width: 25%;
+    height: 70%;
+    border: 2px solid grey;
+    border-radius: 10px;
+    background-color: ghostwhite;
+    box-shadow: -4px 7px 57px -1px rgba(0,0,0,0.61);
+
+
+}
+.cont-res__inner, .cont-choose__inner, .cont-buy__inner{
+    margin: 10% auto;
+    width: 80%;
+    height: 80%;
+}
+
+.balance, .beer, .vine, .pepsi{
+    margin-bottom: 10px;
+    width: 100%;
+    height: 15%;
+    box-shadow: -3px 3px 40px -11px rgba(0,0,0,0.21);
+    border-radius: 7px;
+    background-color: rgb(218, 216, 216);
+}
+p{
+    font-weight: bold;
+}
+/* cont-choose */
+.choose-buy{
+    width: 100%;
+    height: 100%;
+}
+.count{
+    width: 100%;
+    height: 15%;
+}
+.count, .choose-but, .buy-but{
+    margin: 3% 0;
+    box-shadow: -3px 3px 40px -11px rgba(0,0,0,0.21);
+    border-radius: 7px;
+}
+.radio{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5px 0 ;
+}
+.choose-but, .buy-but{
+    width: 50%;
+    height: 12%;
+    background-color: rgb(187, 187, 187)
+}
+.order-list{
+    width: 100%;
+    min-height: 25%;
+    background-color: rgb(218, 216, 216);
+    border-radius: 7px;
+}
+/* cont-buy__inner */
+
+.cont-buy__inner{
+    border: 1px solid #000;
+}
+
+
+
+
+
+
+
