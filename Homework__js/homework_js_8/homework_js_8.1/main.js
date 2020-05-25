@@ -1,6 +1,7 @@
-// Завдання 1
 function getDigits(number){
-    console.log(askDrib.toFixed(0.6))
-}
-let askDrib = +prompt('write number(drib)');
-getDigits(askDrib);
+    let fixed = number.toString().split('.')[1].length;
+    let drib = number - Math.floor(number);
+    console.log(drib.toFixed(fixed));
+};
+getDigits(1.234);
+getDigits(23.8476);
