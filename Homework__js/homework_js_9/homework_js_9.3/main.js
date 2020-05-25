@@ -1,5 +1,14 @@
-// Людина вводить текст, в якому міститься слово html (html може зустрічатись в тексті
-//     декілька разів). Потрібно, вивести в консолі загальну кількість слів html у введеному
-//     тексті.
-//     Приклад роботи:
-//     Користувач вводить: “Text html javascript html css” – в консоль виводиться 2.
+let askHtml = prompt('write something');
+let includ = askHtml.indexOf('html');
+
+if(includ < 0) {
+    console.log('Not found html')
+} else {
+    let suma = 0;
+    for( let i = 0; i< askHtml.length; i++){
+        if(askHtml.indexOf('html',i) == i){
+            suma += 1;
+        }
+    }
+    console.log(`Тут є: ${suma} html`)
+}
