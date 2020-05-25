@@ -1,15 +1,14 @@
-// Користувач вводить текст в prompt. Потрібно порахувати і вивести кількість пробілів, які
-// були введені.
 let askProb = prompt('write something with probil');
-let sumProb = '';
+let sumProb = askProb.indexOf(' ');
 
-if(askProb.indexOf(' ') < 0){
+if(sumProb < 0){
     console.log('Тут немає пробілів')
-}else if(askProb.includes(' ')){
+}else {
+    let suma = 0;
     for(let i = 0; i<=askProb.length; i++){
-        if(askProb.includes(' ')){
-            sumProb ++;
+        if(askProb.indexOf(' ',i) == i){
+            suma += 1;
         }
     }
-    console.log(`тут є: ${sumProb} пробіли`)
+    console.log(`тут є: ${suma} пробілів`)
 }
