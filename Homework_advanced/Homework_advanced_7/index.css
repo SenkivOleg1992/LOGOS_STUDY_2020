@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=Fondamento&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fondamento', cursive;
+}
+/* body{
+    position: absolute;
+} */
+.container-form{
+    width: 100%;
+    height: 8vh;
+}
+.formSearch{
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.searchMovie, .btnSearch{
+    width: 47%;
+    height: 80%;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 10px 10px 20px 10px rgb(0,0,0,0.5);
+}
+.btnSearch{
+    background-color: green;
+    color: white;
+}
+.container-result{
+    margin: auto;
+    width: 98%;
+    min-height: 100vh;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+/* to js */
+.container-movie{
+    margin-top: 20px;
+    width: 19%;
+    height: 90vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid grey;
+    border-radius: 3px;
+}
+.container-movie__poster{
+    width: 100%;
+    height: 60%;  
+    border-radius: inherit;  
+    background-size: 100% 100%;
+}
+.container-movie__title{
+    width: 100%;
+    height: 15%;
+    background-color: rgb(199, 196, 196);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: inherit;
+}
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-movie__date{
+    width: 100%;
+    height: 15%;
+    background-color: ghostwhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: inherit;
+}
+.container-movie__btn-more{
+    width: 100%;
+    height: 10%;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: inherit;
+}
+
+/*  container more details */
+
+.container__more-details{
+    position: fixed;
+    top:  20px;
+    left: 2.5%;
+    width: 95%;
+    height: 100vh;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid grey;
+    background-color: ghostwhite;
+    display: none;
+}
+
+.container__more-details__poster{
+    width: 30%;
+    height: 85vh;
+    background-size: 100% 100%;
+}
+.container__more-details__info{
+    width: 60%;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.container__more-details__info__title{
+    width: 100%;
+    height: 15%;
+    background-color: gainsboro;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced_8.5</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container-title flex-center">
+        <h1>List of prohibited words: </h1>
+    </div>
+    <main class="flex-center">
+        <div class="container-search">
+            <div class="container-search__inner">
+                <div class="container-search__inner__bad-words">
+                    <div class="container-search__inner__bad-words__title">
+                        <h2>Bad words:</h2>
+                    </div>
+                    <div class="container-search__inner__bad-words__result"></div>
+                </div>
+                <form name="form-cenzor" class="form-cenzor">
+                    <input type="text" name="words" class="words bor-radius" placeholder="word here...">
+                    <input type="button" name="btnAdd" class="add bor-radius" value="Add">
+                    <input type="button" name="btnReset" class="reset bor-radius" value="Reset">
+                    <textarea name="result" class="result bor-radius" placeholder="Text here..."></textarea>
+                    <input type="button" name="btnCenzor" class="cenzor bor-radius" value="Cenzor">
+                </form>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Lobster+Two|Special+Elite&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 90%;
+    height: 50vh;
+    border: 4px solid gainsboro;
+    box-shadow: 3px 4px 5px gray;
+    margin: 50px auto;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: 'Kaushan Script', cursive;
+}
+/* form */
+.container__form{
+    width: 45%;
+    min-height:90%;
+    /* border: 1px solid red; */
+}
+.userForm{
+    width: 100%;
+    height: 85%;
+    /* border: 1px solid #000; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.login{
+    height: 15%;
+    border-radius: 7px;
+    font-size: 15px;
+    padding: 0 5px;
+}
+.password{
+    height: 15%;
+    border-radius: 7px;
+    padding: 0 5px;
+
+}
+.email{
+    height: 15%;
+    border-radius: 7px;
+    padding: 0 5px;
+
+}
+.addUser{
+    width: 20%;
+    padding: 10px;
+    color: white;
+    font-family: 'Special Elite', cursive;
+    border-radius: 7px;
+    background-color: white;
+    color: green;
+}
+
+/*  right part */
+.container__user{
+    width: 45%;
+    height:90%;
+}
+
+.table{
+    margin-top: 30px;
+    width: 100%;
+    min-height: 100px;
+};
+tr{
+    height: 50px;
+    border-bottom: 3px solid grey;
+}
+td{
+    height: 50px;
+    border-bottom: 3px solid grey;
+}
+
+/* edit,delete */
+.edit{
+    padding: 10px;
+    font-size: 20px;
+    background-color: yellow;
+}
+.delete{
+    padding: 10px;
+    font-size: 20px;
+    background-color: red;
+    color: white;
+}
+/*  */
+.change{
+    width: 20%;
+    padding: 10px;
+    font-family: 'Special Elite', cursive;
+    border-radius: 7px;
+    background-color: white;   
+    display: none;
+}
