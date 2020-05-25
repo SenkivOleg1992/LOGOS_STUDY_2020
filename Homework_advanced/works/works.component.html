@@ -1,0 +1,13 @@
+<nav>
+  <div class="nav nav-tabs"  role="tablist">
+    <p class="last-works">Last works >>></p>
+    <a class=" nav-link"  [routerLink]="['cenzor']" routerLinkActive="active" data-toggle="tab" role="tab"aria-selected="true">Cenzor</a>
+    <a class=" nav-link"  [routerLink]="['userlist']" routerLinkActive="active"  data-toggle="tab"  role="tab" aria-selected="false">Users</a>
+    <a class=" nav-link"  [routerLink]="['tasklist']" routerLinkActive="active" data-toggle="tab"role="tab"  aria-selected="false">Task</a>
+    <p class="back-to-home">Back to >>></p>
+    <a class=" nav-link home"  [routerLink]="['home ']" routerLinkActive="active"  aria-selected="false">Home</a>
+  </div>
+</nav>
+<div class="tab-content" >
+  <router-outlet></router-outlet>
+</div>

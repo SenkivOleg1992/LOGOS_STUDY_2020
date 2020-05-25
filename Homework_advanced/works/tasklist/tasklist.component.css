@@ -1,0 +1,12 @@
+.add-user{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.add-input{
+    width: 70%;
+    border-radius: 5px;
+}
+.add{
+    width: 25%;
+}
