@@ -1,0 +1,76 @@
+{
+  "blogs": [
+    {
+      "id": 1,
+      "title": "title 1",
+      "text": "some text 1",
+      "date": " 25 05 2020",
+      "author": "Oleg Senkiv"
+    },
+    {
+      "id": 2,
+      "title": "title 2",
+      "text": " some text 2",
+      "date": " 25 05 2020",
+      "author": "Senkiv Roman"
+    },
+    {
+      "id": 3,
+      "title": "Title 3",
+      "text": "some text 3",
+      "date": " 25 05 2020",
+      "author": "Gvozdetska Chrystyna"
+    },
+    {
+      "id": 4,
+      "title": "title 4",
+      "text": "some  text 4",
+      "date": " 25 05 2020",
+      "author": "Tyz Nazarii"
+    }
+  ],
+  "categories": [
+    {
+      "id": 5,
+      "nameCat": "pasta"
+    },
+    {
+      "id": 9,
+      "nameCat": "pizza"
+    },
+    {
+      "id": 10,
+      "nameCat": "drinks"
+    },
+    {
+      "id": 11,
+      "nameCat": "salat"
+    }
+  ],
+  "products": [
+    {
+      "id": 2,
+      "category": "pasta",
+      "name": "italiano",
+      "description": "smakota",
+      "price": "80 UAH",
+      "image": "C:\\fakepath\\banner-title-bg.png"
+    },
+    {
+      "id": 3,
+      "category": "salat",
+      "name": "4  chees",
+      "description": "smaaa",
+      "price": "100 UAH",
+      "image": "C:\\fakepath\\banner-title-bg.png"
+    },
+    {
+      "id": 4,
+      "category": "drinks",
+      "name": "Beer",
+      "description": "Irish",
+      "price": "50 UAH",
+      "image": "C:\\fakepath\\main.jpg"
+    }
+  ]
+}
