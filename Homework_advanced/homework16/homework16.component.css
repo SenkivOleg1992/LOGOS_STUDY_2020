@@ -1,0 +1,13 @@
+.input-search{
+    width: 85%;
+    height: 6vh;
+    border-radius: 5px;
+}
+
+table {
+    width: 100%;
+}
+  
+th.mat-sort-header-sorted {
+    color: black;
+}
