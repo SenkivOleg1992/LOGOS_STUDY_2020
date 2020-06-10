@@ -1,0 +1,88 @@
+<div class="container-fluid mt-2">
+  <div class="d-flex justify-content-between bg-secondary mt-2 card-header">
+    <h2>Products</h2>
+    <button (click)="openModal(prod)" class="btn btn-dark btn-lg"> Add </button>
+  </div>
+  <form>
+    <input [(ngModel)]="filterProd" name="filterProd" type="text" class="mt-2 form-control"
+      placeholder="filter category">
+  </form>
+
+  <table class="table mt-2">
+    <thead class="thead-light">
+      <th>#</th>
+      <th>Category</th>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Price</th>
+      <th>Image</th>
+      <th>Edit</th>
+      <th>Delete</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let c of adminProducts | filterProducts: filterProd; let i=index">
+        <td> {{i+1}} </td>
+        <td> {{ c.category }} </td>
+        <td> {{ c.name }} </td>
+        <td> {{ c.description }} </td>
+        <td> {{ c.price }} </td>
+        <td> {{c.image}} </td>
+        <td>
+          <button (click)="editProduct(prod, c)" class="btn btn-dark">Edit</button>
+        </td>
+        <td>
+          <button (click)="deleteProduct(c)" class="btn btn-dark">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!--  -->
+<ng-template #prod>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">Modal title</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <form>
+      <div class="form-group row">
+        <label for="category" class="col-sm-2 col-form-label">Category:</label>
+        <div class="col-sm-10">
+          <select [(ngModel)]="category" name="category" class="form-control" id="category">
+            <option *ngFor="let c of adminCategory; let i = index;" [value]="c.nameCat">{{c.nameCat}}</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="inputName" class="col-sm-2 col-form-label">Name:</label>
+        <div class="col-sm-10">
+          <input [(ngModel)]="name" name="name" type="text" class="form-control" id="inputName">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="inputDescription" class="col-sm-2 col-form-label">Description: </label>
+        <div class="col-sm-10">
+          <textarea [(ngModel)]="description" name="name" type="text" class="form-control"
+            id="inputDescription"></textarea>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="inputPrice" class="col-sm-2 col-form-label">Price</label>
+        <div class="col-sm-10">
+          <input [(ngModel)]="price" name="price" type="text" class="form-control" id="inputPrice">
+        </div>
+      </div>
+      <div class="custom-file">
+        <input [(ngModel)]="image" name="image" type="file" class="custom-file-input" id="customFile">
+        <label class="custom-file-label" for="customFile">Choose file</label>
+      </div>
+      <hr>
+      <button type="button" (click)="addProduct()" (click)="modalRef.hide()"
+        class="btn btn-dark float-right ml-2">Add</button>
+      <button type="button" (click)="modalRef.hide()" class="btn btn-secondary float-right">Close</button>
+    </form>
+  </div>
+</ng-template>

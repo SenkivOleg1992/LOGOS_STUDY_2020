@@ -1,0 +1,36 @@
+<div class="container-fluid">
+    <form>
+        <input [(ngModel)]="titleBlog" name="titleBlog" type="text" class="form-control" placeholder="title here...">
+        <textarea [(ngModel)]="textBlog" name="textBlog" class="form-control" placeholder="text here..."></textarea>
+        <input [(ngModel)]="authorBlog" name="authorBlog" type="text" class="form-control" placeholder="author here...">
+        <button  (click)="addBlogPost()" type="button" class="btn btn-dark">Add</button>
+        <!-- <button *ngIf="isEdit" (click)="saveEditBlog()" type="button" class="btn btn-secondary">Save edit</button> -->
+    </form>
+    <table class="table">
+        <thead>
+            <th>#</th>
+            <th>Title</th>
+            <th>Text</th>
+            <th>Date</th>
+            <th>Author</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let a of adminBlogs; let i=index">
+                <td> {{ i+1 }} </td>
+                <td>{{ a.title }}</td>
+                <td>{{ a.text }}</td>
+                <td>{{ a.date }}</td>
+                <td>{{ a.author }}</td>
+                <td>
+                    <button (click)="editBlog(a)" class="btn btn-dark"> Edit</button>
+                </td>
+                <td>
+                    <button (click)="deleteBlog(a)" class="btn btn-dark"> Delete</button>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+</div>

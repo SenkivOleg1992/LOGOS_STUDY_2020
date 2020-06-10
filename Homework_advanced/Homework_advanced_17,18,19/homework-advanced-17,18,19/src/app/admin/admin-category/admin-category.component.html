@@ -1,0 +1,49 @@
+<div class="container-fluid mt-2">
+    <div class="d-flex justify-content-between bg-secondary mt-2 card-header">
+        <h2>Category</h2>
+        <button  (click)="openModal(categor)" class="btn btn-dark btn-lg" > Add </button>
+    </div>
+    <form>
+        <input [(ngModel)]="filterCateg" name="filterCateg" type="text" class="mt-2 form-control" placeholder="filter category">
+    </form>
+
+    <table class="table mt-2">
+        <thead class="thead-light">
+            <th>#</th>
+            <th>Name</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let c of adminCategory | filterCategory: filterCateg; let i=index">
+                <td> {{i+1}} </td>
+                <td> {{ c.nameCat }}  </td>
+                <td>
+                    <button (click)="editCategory(categor, c)" class="btn btn-dark">Edit</button>
+                </td>
+                <td>
+                    <button (click)="deleteCategory(c)" class="btn btn-dark">Delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<!--  -->
+ 
+<ng-template #categor>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">Modal title</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <form >
+        <input [(ngModel)]="nameCat" name="nameCat" type="text" class="form-control" placeholder="name here...">
+        <hr>
+        <button type="button" (click)="addCategory()" (click)="modalRef.hide()" class="btn btn-dark float-right ml-2" >Add</button>
+        <button type="button" (click)="modalRef.hide()" class="btn btn-secondary float-right">Close</button>
+    </form>
+  </div>
+</ng-template>

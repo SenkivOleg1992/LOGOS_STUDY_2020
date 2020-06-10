@@ -1,0 +1,50 @@
+<button type="button" class="btn btn-primary" (click)="openModalSign(template)">Create template modal</button>
+ 
+<ng-template #template>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">Sign In</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRefSign.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <form>
+        <div class="form-group">
+            <label for="userEmail">Email</label>
+            <input [(ngModel)]="userEmail" name="userEmail" id="userEmail" type="text" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="userPassword">Password</label>
+            <input [(ngModel)]="userPassword" name="userPassword" id="userPassword" type="text" class="form-control">
+        </div>
+        <button type="button" (click)="closeModal()" class="btn btn-secondary">Close</button>
+        <button type="button" (click)="submit()" class="btn btn-success">Submit</button>
+    </form>
+  </div>
+</ng-template>
+
+
+<button type="button" class="btn btn-primary" (click)="openModalPost(addPost)">Create post modal</button>
+<ng-template #addPost>
+    <div class="modal-header">
+      <h4 class="modal-title pull-left">Add post</h4>
+      <button type="button" class="close pull-right" aria-label="Close" (click)="modalRefPost.hide()">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <form>
+          <div class="form-group">
+              <label for="titlePost">Title</label>
+              <input [(ngModel)]="titlePost" name="titlePost" id="titlePost" type="text" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="textPost">Text</label>
+            <textarea [(ngModel)]="textPost" name="textPost" id="textPost" class="form-control"></textarea>
+        </div>
+          
+          <button type="button" (click)="closePost()" class="btn btn-secondary">Close</button>
+          <button type="button" (click)="savePost()" class="btn btn-success">Post</button>
+      </form>
+    </div>
+  </ng-template>
