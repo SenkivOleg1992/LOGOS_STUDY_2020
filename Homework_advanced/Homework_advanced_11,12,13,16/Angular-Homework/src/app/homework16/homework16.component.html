@@ -1,0 +1,101 @@
+<h1>My phone book!</h1>
+<div class="container-fluid">
+  <form>
+      <div class="form-group ">
+        <input type="text"  matInput (keyup)="filter($event)" [(ngModel)]="searchName" name="searchName" 
+          placeholder="search text goes here" class="col-10">
+        <button type="button" (click)="openModal(addUser)" class="btn btn-success col-2">add phone</button>
+      </div>
+  </form>
+  
+  <table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8">
+    <ng-container matColumnDef="firstName">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> First name </th>
+      <td mat-cell *matCellDef="let element"> {{element.firstName}} </td>
+    </ng-container>
+  
+    <ng-container matColumnDef="lastName">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> Last name </th>
+      <td mat-cell *matCellDef="let element"> {{element.lastName}} </td>
+    </ng-container>
+  
+    <ng-container matColumnDef="number">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> Number </th>
+      <td mat-cell *matCellDef="let element"> {{element.number}} </td>
+    </ng-container>
+  
+    <ng-container matColumnDef="edit">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> Edit </th>
+      <td mat-cell *matCellDef="let element; let i = index;">
+        <button mat-raised-button matTooltip="Click to Edit" class="raisedbutton btn btn-warning"  (click)="edit(addUser,i)">
+          edit
+        </button>
+     </td>
+    </ng-container>
+  
+    <ng-container matColumnDef="delete">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> Delete </th>
+      <td mat-cell *matCellDef="let element; let i = index;">
+        <button mat-raised-button matTooltip="Click to Delete" class="raisedbutton" color="warn" (click)="delete(i)">
+          delete
+        </button>
+     </td>
+    </ng-container>
+  
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+
+  <!-- <table class="table">
+    <thead>
+      <th>First name </th>
+      <th>Last name</th>
+      <th>Number</th>
+      <th>edit</th>
+      <th>delete</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of usersPhone | search: searchName; let i=index">
+        <td> {{ user.firstName }} </td>
+        <td> {{ user.lastName }} </td>
+        <td> {{ user.number }} </td>
+        <td>
+          <input type="button" (click)="edit(addUser,i)" class="btn btn-warning" value="edit">
+        </td>
+        <td>
+          <input type="button" (click)="delete(i)" class="btn btn-danger" value="delete">
+        </td>
+      </tr>
+    </tbody>
+  </table> -->
+</div>
+
+<ng-template #addUser>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">Add phone</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <form>
+      <div class="form-group">
+        <input type="text" [(ngModel)]="modalFirstName" name="modalFirstName" class="form-control"
+          placeholder="first name goes here">
+      </div>
+      <div class="form-group">
+        <input type="text" [(ngModel)]="modalLastName" name="modalLastName" class="form-control"
+          placeholder="second name goes here">
+      </div>
+      <div class="form-group">
+        <input type="text" [(ngModel)]="modalNumber" name="modalNumber" class="form-control"
+          placeholder="number phone goes here">
+      </div>
+      <hr>
+      <button type="button" *ngIf="!isSaveEdit" class="btn btn-primary" (click)="addSave(addUser)"
+        (click)="modalRef.hide()">Save</button>
+      <button type="button" *ngIf="isSaveEdit" class="btn btn-success" (click)="saveEdit()"
+        (click)="modalRef.hide()">Save</button>
+    </form>
+  </div>
+</ng-template>
